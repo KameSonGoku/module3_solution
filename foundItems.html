@@ -1,0 +1,7 @@
+<div ng-repeat="item in menu.foundItems">
+  <h2> {{item.name}} </h2>
+  <h2> {{item.short_name}} </h2>
+  <h2> {{item.description}} </h2>
+  <button ng-click="menu.onRemove({index:$index})"> Don't want this one! </button>
+</div>
+<div ng-show="menu.onEmpty">{{menu.onEmpty}}</div>
